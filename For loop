@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    int a,b;
+    cin >> a;
+    cin >> b;
+    for(a; a<=b; a++){
+        string output;
+        switch (a) {
+        case 1:
+        output = "one";
+        break;
+        case 2:
+        output = "two";
+        break;
+        case 3:
+        output = "three";
+        break;
+        case 4:
+        output = "four";
+        break;
+        case 5:
+        output = "five";
+        break;
+        case 6:
+        output = "six";
+        break;
+        case 7:
+        output = "seven";
+        break;
+        case 8:
+        output = "eight";
+        break;
+        case 9:
+        output = "nine";
+        break;
+        default:
+        output = (a%2==0)?"even":"odd";
+        } 
+        cout << output << endl; 
+    }
+    return 0;
+}
